@@ -1,0 +1,30 @@
+﻿Build started 2/13/2015 1:14:05 PM.
+     1>Project "C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\OculusRoomTiny.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../../../../../LibOVR/Include /I../../../../../3rdParty/glext /I../../../../../LibOVR/Src /Z7 /nologo /W4 /WX- /MP /Od /Oy- /D OVR_BUILD_DEBUG /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/" /Fd"C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ../../../Win32_OculusRoomTiny.cpp ../../../Win32_OculusRoomTiny_Util.cpp ..\..\..\ProgschTut.cpp
+         Win32_OculusRoomTiny.cpp
+         Win32_OculusRoomTiny_Util.cpp
+         ProgschTut.cpp
+     1>..\..\..\ProgschTut.cpp(4): fatal error C1083: Cannot open include file: 'GLFW/glfw3.h': No such file or directory
+     1>../../../Win32_OculusRoomTiny_Util.cpp(137): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>c:\portinst\oculussdk\samples\oculusroomtiny\win32_oculusroomtiny.cpp(80): warning C4702: unreachable code
+     1>c:\portinst\oculussdk\samples\oculusroomtiny\win32_oculusroomtiny.cpp(83): warning C4702: unreachable code
+     1>c:\portinst\oculussdk\samples\oculusroomtiny\win32_oculusroomtiny.cpp(89): warning C4702: unreachable code
+     1>c:\portinst\oculussdk\samples\oculusroomtiny\win32_oculusroomtiny.cpp(92): warning C4702: unreachable code
+     1>c:\portinst\oculussdk\samples\oculusroomtiny\win32_oculusroomtiny.cpp(95): warning C4702: unreachable code
+     1>c:\portinst\oculussdk\samples\oculusroomtiny\win32_oculusroomtiny.cpp(96): warning C4702: unreachable code
+     1>c:\portinst\oculussdk\samples\oculusroomtiny\win32_oculusroomtiny.cpp(99): warning C4702: unreachable code
+     1>c:\portinst\oculussdk\samples\oculusroomtiny\win32_oculusroomtiny.cpp(100): warning C4702: unreachable code
+     1>c:\portinst\oculussdk\samples\oculusroomtiny\win32_oculusroomtiny.cpp(103): warning C4702: unreachable code
+     1>c:\portinst\oculussdk\samples\oculusroomtiny\win32_oculusroomtiny.cpp(104): warning C4702: unreachable code
+     1>c:\portinst\oculussdk\samples\oculusroomtiny\win32_oculusroomtiny.cpp(111): warning C4702: unreachable code
+     1>c:\portinst\oculussdk\samples\oculusroomtiny\win32_oculusroomtiny.cpp(113): warning C4702: unreachable code
+     1>c:\portinst\oculussdk\samples\oculusroomtiny\win32_oculusroomtiny.cpp(155): warning C4702: unreachable code
+     1>c:\portinst\oculussdk\samples\oculusroomtiny\win32_oculusroomtiny.cpp(232): warning C4702: unreachable code
+     1>c:\portinst\oculussdk\samples\oculusroomtiny\win32_oculusroomtiny.cpp(240): warning C4702: unreachable code
+     1>c:\portinst\oculussdk\samples\oculusroomtiny\win32_oculusroomtiny.cpp(241): warning C4702: unreachable code
+     1>Done Building Project "C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\OculusRoomTiny.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.81

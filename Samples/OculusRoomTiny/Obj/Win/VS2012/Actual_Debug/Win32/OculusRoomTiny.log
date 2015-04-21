@@ -1,0 +1,9 @@
+﻿Build started 4/21/2015 5:21:23 PM.
+     1>Project "C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\OculusRoomTiny.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         OculusRoomTiny.vcxproj -> C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Actual_Debug/OculusRookTiny.exe
+     1>Done Building Project "C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\OculusRoomTiny.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.70

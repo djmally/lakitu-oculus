@@ -1,0 +1,16 @@
+﻿Build started 1/29/2015 4:04:47 PM.
+     1>Project "C:\portInst\OculusSDK\Samples\dh_tut\textured_quad\textured_quad.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W4 /WX- /O2 /Ob1 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Release/" /Fd".\Release/vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Common\dhD3D.cpp ..\Common\dhUserPrefsDialog.cpp ..\Common\dhUtility.cpp ..\Common\dhWindow.cpp textured_quad.cpp
+         dhD3D.cpp
+         dhUserPrefsDialog.cpp
+         dhUtility.cpp
+         dhWindow.cpp
+         textured_quad.cpp
+     1>textured_quad.cpp(271): error C3861: 'D3DXCreateTextureFromFile': identifier not found
+         Generating Code...
+     1>Done Building Project "C:\portInst\OculusSDK\Samples\dh_tut\textured_quad\textured_quad.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.69

@@ -1,0 +1,27 @@
+﻿Build started 2/13/2015 1:14:04 PM.
+     1>Project "C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\OculusWorldDemo.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Bin/Win/VS2012/Debug/Win32/OculusWorldDemo.exe" /INCREMENTAL /NOLOGO /LIBPATH:../../../../../LibOVR/Lib/Win32/VS2012/ ws2_32.lib opengl32.lib Dbghelp.lib libovrd.lib dxgi.lib d3d10_1.lib d3d11.lib d3dcompiler.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Bin/Win/VS2012/Debug/Win32/OculusWorldDemo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Bin/Win/VS2012/Debug/Win32/OculusWorldDemo.lib" /MACHINE:X86 C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/OculusWorldDemo.res
+         C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/Platform.obj
+         C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/Win32_Gamepad.obj
+         C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/Win32_Platform.obj
+         C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/Render_GL_Device.obj
+         C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/Render_GL_Win32_Device.obj
+         C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/Render_LoadTextureDDS.obj
+         C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/Render_LoadTextureTGA.obj
+         C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/Render_Device.obj
+         C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/Render_D3D10_Device.obj
+         C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/Render_D3D11_Device.obj
+         C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/tinyxml2.obj
+         C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/Render_XmlSceneLoader.obj
+         C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/OptionMenu.obj
+         C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/RenderProfiler.obj
+         C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/OculusWorldDemo.obj
+         C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/OculusWorldDemo_Scene.obj
+         C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Obj/Win/VS2012/Debug/Win32/Player.obj
+         OculusWorldDemo.vcxproj -> C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\../../../Bin/Win/VS2012/Debug/Win32/OculusWorldDemo.exe
+     1>Done Building Project "C:\portInst\OculusSDK\Samples\OculusWorldDemo\Projects\Win\VS2012\OculusWorldDemo.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.46

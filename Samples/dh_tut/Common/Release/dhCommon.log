@@ -1,0 +1,19 @@
+﻿Build started 1/29/2015 4:04:47 PM.
+     1>Project "C:\portInst\OculusSDK\Samples\dh_tut\Common\dhCommon.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W4 /WX- /O2 /Ob1 /Oy- /D WIN32 /D NDEBUG /D _LIB /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Release/" /Fd".\Release/vc110.pdb" /Gd /TP /analyze- /errorReport:prompt dhD3D.cpp dhUtility.cpp dhWindow.cpp
+         dhD3D.cpp
+         dhUtility.cpp
+         dhWindow.cpp
+         Generating Code...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1299,5): warning MSB8012: TargetPath(C:\portInst\OculusSDK\Samples\dh_tut\Common\.\Release\dhCommon.lib) does not match the Library's OutputFile property value (C:\portInst\OculusSDK\Samples\dh_tut\Common\dhCommon.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"dhCommon.lib" /NOLOGO .\Release/dhD3D.obj
+         .\Release/dhUtility.obj
+         .\Release/dhWindow.obj
+         dhCommon.vcxproj -> C:\portInst\OculusSDK\Samples\dh_tut\Common\.\Release\dhCommon.lib
+     1>Done Building Project "C:\portInst\OculusSDK\Samples\dh_tut\Common\dhCommon.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.81

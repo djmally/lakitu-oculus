@@ -1,0 +1,16 @@
+﻿Build started 2/13/2015 1:22:08 PM.
+     1>Project "C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\OculusRoomTiny.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Release/OculusRookTiny.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\opengl-wrappers\glfw\lib-vc2012" /LIBPATH:"C:\opengl-wrappers\glew\lib" /LIBPATH:../../../../../LibOVR/Lib/Win32/VS2012/ ws2_32.lib Dbghelp.lib libovr.lib dxguid.lib dxgi.lib d3d10.lib d3d11.lib d3dcompiler.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib opengl32.lib glu32.lib glew32.lib glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Release/OculusRookTiny.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Release/OculusRookTiny.lib" /MACHINE:X86 /SAFESEH C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Obj/Win/VS2012/Release/Win32/OculusRoomModel.obj
+         C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Obj/Win/VS2012/Release/Win32/RenderTiny_D3D11_Device.obj
+         C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Obj/Win/VS2012/Release/Win32/Win32_OculusRoomTiny.obj
+         C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Obj/Win/VS2012/Release/Win32/Win32_OculusRoomTiny_Util.obj
+         C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Obj/Win/VS2012/Release/Win32/Win32_Gamepad.obj
+         C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Obj/Win/VS2012/Release/Win32/ProgschTut.obj
+         LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+         OculusRoomTiny.vcxproj -> C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Release/OculusRookTiny.exe
+     1>Done Building Project "C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\OculusRoomTiny.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.27

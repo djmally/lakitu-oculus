@@ -1,0 +1,7 @@
+syntax: glob
+
+./OculusWorldDemo/*
+*.tlog
+*.exe
+*.obj
+*.sdf
