@@ -24,6 +24,7 @@
 
 #include <iostream>
 #include <vector>
+#include <string>
 
 #define GLM_FORCE_RADIANS
 #include <glm/glm.hpp>
@@ -128,8 +129,9 @@ bool check_program_link_status(GLuint obj) {
 SOCKET connect_to_odroid() {
   //char* hostname = "165.123.192.149"; 
   //char* hostname = "50.191.183.184"; 
-  char* hostname = "lakitu.crabdance.com";
+  //char* hostname = "lakitu.crabdance.com";
   //char* hostname = "165.123.192.149";
+  char* hostname = "158.130.2.41";
 
   WSADATA wsaData;
   int iResult;
@@ -190,10 +192,14 @@ SOCKET connect_to_odroid() {
   return ConnectSocket;
 }
 
-void broadcastPose(ovrPosef pose, SOCKET s) {
+void broadcastPose(ovrPosef pose, ovrPosef forward, SOCKET s) {
   float tempHeadPitch, tempHeadRoll, HeadYaw, GamepadYaw;
   OVR::Quatf orientation = OVR::Quatf(pose.Orientation);
   orientation.GetEulerAngles<OVR::Axis_Y, OVR::Axis_X, OVR::Axis_Z>(&HeadYaw, &tempHeadPitch, &tempHeadRoll);
+  
+  float forwardYaw, forwardPitch, forwardRoll;
+  OVR::Quatf forward_orientation = OVR::Quatf(forward.Orientation);
+  forward_orientation.GetEulerAngles<OVR::Axis_Y, OVR::Axis_X, OVR::Axis_Z>(&forwardYaw, &forwardPitch, &forwardRoll);
 
   float pi = 3.1419;
 
@@ -202,10 +208,10 @@ void broadcastPose(ovrPosef pose, SOCKET s) {
   //GetSystemTime(&st);
   //int mil = st.wMilliseconds;
   //char pos = (mil <= 500 ? mil : (500 - mil))/10;
-  char normalizedPitch  = 100.0*(tempHeadPitch + (pi/2.0))/(pi);
-  char normalizedYaw    = 100.0*(HeadYaw + pi)/(2.0*pi); 
+  char normalizedPitch            = 100.0*(tempHeadPitch + (pi/2.0))/(pi);
+  char normalizedYaw = (100.0*(HeadYaw - forwardYaw + pi)/(2.0*pi));
   message[0] = static_cast<char>(normalizedPitch);
-  message[1] = static_cast<char>(normalizedYaw);
+  message[1] = (99 - static_cast<char>(normalizedYaw));
 
   std::printf("message[0] = %d, message[1] = %d \n", message[0], message[1]);
   //can confirm that at this point, message has the correct values in it
@@ -298,10 +304,6 @@ GLuint loadShadersHardcoded() {
 
 void eye_texture_init() {
 
-}
-
-void sensor_init()
-{
 }
 
 //TODO: actually use this function argument
@@ -485,11 +487,28 @@ int glfw_main()
 
     glfwSetWindowSizeCallback(window, windowSizeCallback);
 
+    //pose normalization step
+    std::cout << "press enter when you are facing forward";
+    std::string ignorepls;
+    std::getline(std::cin, ignorepls);
+    ovrPosef forward_pose = ovrHmd_GetEyePose(hmd, hmd_desc.EyeRenderOrder[0]); 
+    printPose(forward_pose);
+
     while (glfwGetKey(window, GLFW_KEY_ESCAPE) != GLFW_PRESS && \
             !glfwWindowShouldClose(window))
     {
 
-        ovrFrameTiming m_HmdFrameTiming = ovrHmd_BeginFrame(hmd, 0);
+        //TODO: Figure out now to keep this function's accompanying end function without crashing everything.
+        //ovrFrameTiming m_HmdFrameTiming = ovrHmd_BeginFrame(hmd, 0);
+
+        glUseProgram(program_id);
+        glBindFramebuffer(GL_FRAMEBUFFER, fbo);
+        glClearColor(1.0f, 0.0f, 1.0f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        
+        //TODO: Figure out now to keep this function's accompanying end function without crashing everything.
+        //ovrFrameTiming m_HmdFrameTiming = ovrHmd_BeginFrame(hmd, 0);
 
         glUseProgram(program_id);
         glBindFramebuffer(GL_FRAMEBUFFER, fbo);
@@ -508,7 +527,7 @@ int glfw_main()
             if (eye == 0) {
                 printPose(eye_pose[0]);
 	              SOCKET socket = connect_to_odroid();
-				        broadcastPose(eye_pose[0], socket);
+				        broadcastPose(eye_pose[0], forward_pose, socket);
                 shutdown(socket, SD_SEND);
                 closesocket(socket);
 			      }
@@ -570,7 +589,8 @@ int glfw_main()
 
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
-        ovrHmd_EndFrame(hmd, eye_pose, &eye_texture[0].Texture);
+        //TODO: put this back in
+        //ovrHmd_EndFrame(hmd, eye_pose, &eye_texture[0].Texture);
 
         glBindBuffer(GL_ARRAY_BUFFER, 0);
 

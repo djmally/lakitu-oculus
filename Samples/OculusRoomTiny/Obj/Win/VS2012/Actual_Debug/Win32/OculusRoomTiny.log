@@ -1,9 +1,43 @@
-﻿Build started 4/21/2015 5:21:23 PM.
+﻿Build started 4/21/2015 11:41:28 PM.
      1>Project "C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\OculusRoomTiny.vcxproj" on node 2 (Build target(s)).
-     1>Link:
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\opengl-wrappers\glfw\include" /I"C:\opengl-wrappers\glew\include" /I../../../../../LibOVR/Include /I../../../../../3rdParty/glext /I../../../../../LibOVR/Src /AI"C:\opengl-wrappers\glew" /AI"C:\opengl-wrappers\glfw" /Z7 /nologo /W4 /WX- /MP /Od /Ob0 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Obj/Win/VS2012/Actual_Debug/Win32/" /Fd"C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Obj/Win/VS2012/Actual_Debug/Win32/vc110.pdb" /Gd /TP /analyze- /errorReport:prompt /d2Zi+ ..\..\..\MarkOneOGL_1.cpp
+         MarkOneOGL_1.cpp
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\glm\detail/type_vec2.hpp(64): warning C4201: nonstandard extension used : nameless struct/union
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\glm\detail/type_vec2.hpp(242) : see reference to class template instantiation 'glm::tvec2<T,P>' being compiled
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\glm\detail/type_vec2.hpp(65): warning C4201: nonstandard extension used : nameless struct/union
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\glm\detail/type_vec2.hpp(66): warning C4201: nonstandard extension used : nameless struct/union
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\glm\detail/type_vec3.hpp(64): warning C4201: nonstandard extension used : nameless struct/union
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\glm\detail/type_vec3.hpp(264) : see reference to class template instantiation 'glm::tvec3<T,P>' being compiled
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\glm\detail/type_vec3.hpp(65): warning C4201: nonstandard extension used : nameless struct/union
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\glm\detail/type_vec3.hpp(66): warning C4201: nonstandard extension used : nameless struct/union
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\glm\detail/type_vec4.hpp(118): warning C4201: nonstandard extension used : nameless struct/union
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\glm\detail/type_vec4.hpp(364) : see reference to class template instantiation 'glm::tvec4<T,P>' being compiled
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\glm\detail/type_vec4.hpp(119): warning C4201: nonstandard extension used : nameless struct/union
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\glm\detail/type_vec4.hpp(120): warning C4201: nonstandard extension used : nameless struct/union
+     1>..\..\..\MarkOneOGL_1.cpp(57): warning C4100: 'p_Window' : unreferenced formal parameter
+     1>..\..\..\MarkOneOGL_1.cpp(204): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\..\..\MarkOneOGL_1.cpp(211): warning C4244: 'initializing' : conversion from 'double' to 'char', possible loss of data
+     1>..\..\..\MarkOneOGL_1.cpp(212): warning C4244: 'initializing' : conversion from 'double' to 'char', possible loss of data
+     1>..\..\..\MarkOneOGL_1.cpp(196): warning C4101: 'GamepadYaw' : unreferenced local variable
+     1>..\..\..\MarkOneOGL_1.cpp(232): warning C4101: 'GamepadYaw' : unreferenced local variable
+     1>..\..\..\MarkOneOGL_1.cpp(412): warning C4189: 'fb_INCOMPLETE_DRAW_BUFFER' : local variable is initialized but not referenced
+     1>..\..\..\MarkOneOGL_1.cpp(469): warning C4189: 'texture_location' : local variable is initialized but not referenced
+     1>..\..\..\MarkOneOGL_1.cpp(413): warning C4189: 'fb_INCOMPLETE_READ_BUFFER' : local variable is initialized but not referenced
+     1>..\..\..\MarkOneOGL_1.cpp(411): warning C4189: 'fb_INCOMPLETE_MISSING_ATTACHMENT' : local variable is initialized but not referenced
+     1>..\..\..\MarkOneOGL_1.cpp(409): warning C4189: 'fb_UNDEFINED' : local variable is initialized but not referenced
+     1>..\..\..\MarkOneOGL_1.cpp(410): warning C4189: 'fb_INCOMPLETE_ATTACHMENT' : local variable is initialized but not referenced
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Actual_Debug/OculusRookTiny.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\opengl-wrappers\glfw\lib-vc2012" /LIBPATH:"C:\opengl-wrappers\glew\lib" /LIBPATH:../../../../../LibOVR/Lib/Win32/VS2012/ ws2_32.lib Dbghelp.lib libovr.lib dxguid.lib dxgi.lib d3d10.lib d3d11.lib d3dcompiler.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib opengl32.lib glu32.lib glew32.lib glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Actual_Debug/OculusRookTiny.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Actual_Debug/OculusRookTiny.lib" /MACHINE:X86 /SAFESEH C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Obj/Win/VS2012/Actual_Debug/Win32/OculusRoomModel.obj
+         C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Obj/Win/VS2012/Actual_Debug/Win32/RenderTiny_D3D11_Device.obj
+         C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Obj/Win/VS2012/Actual_Debug/Win32/Win32_OculusRoomTiny_Util.obj
+         C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Obj/Win/VS2012/Actual_Debug/Win32/Win32_Gamepad.obj
+         C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Obj/Win/VS2012/Actual_Debug/Win32/MarkOneOGL_1.obj
+         C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Obj/Win/VS2012/Actual_Debug/Win32/Win32_OculusRoomTiny.obj
+         LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
          OculusRoomTiny.vcxproj -> C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\../../../Actual_Debug/OculusRookTiny.exe
      1>Done Building Project "C:\portInst\OculusSDK\Samples\OculusRoomTiny\Projects\Win\VS2012\OculusRoomTiny.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.70
+Time Elapsed 00:00:01.45
